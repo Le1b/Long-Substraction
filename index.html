@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Вычитание больших чисел</title>
+   <style>
+   .wraper {
+      width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 2px solid #737373;
+      color: #737373;
+   }
+   .wraper h2 {
+      margin-top: 0;
+   }
+   .wraper label {
+      width: 18%;
+      display: inline-block;
+      margin-right: 3px;
+      text-align: right;
+   }
+   .wraper input {
+      width: 80%;
+      text-align: right;
+   }
+   .wraper p {
+      color: #2D7DF5;
+      text-align: right;
+      width: 98%;
+      font-weight: 900;
+      font-family: sans-serif;
+      margin: 0 auto;
+   }
+   </style>
+</head>
+
+<body>
+   <div class="wraper">
+      <h2>Вычитание больших чисел</h2>
+      <label for="">Первое число</label>
+      <input type="text" id="first" placeholder="0" value="0">
+      <p>-</p>
+      <label for="">Второе число</label>
+      <input type="text" id="second" placeholder="0" value="0">
+      <p>=</p>
+      <label for="">Результат</label>
+      <input type="text" id="result" value="0" readonly>
+      <div>
+         <ul>
+            <li>Разрешаеться вводить толко цифры от 0 до 9</li>
+            <li>Разрешаеться вводить только положительные числа</li>
+            <li>Максимальная длинна чисел составляет 256 символов</li>
+         </ul>
+      </div>
+   </div>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="application.js"></script>
+</body>
+
+</html>
